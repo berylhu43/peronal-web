@@ -49,19 +49,27 @@ body {
   transition: transform 0.1s; /* Quick transition for the hover effect */
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;  /* This ensures that items are stacked vertically */
+  justify-content: center;
+  align-items: left;
+  /* height: 100vh; */
+}
 
 .title {
-  font-size: 32px;   /* adjust as needed */
+  font-size: 30px;   /* adjust as needed */
   font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px; /* adjust space between title and gallery */
+  text-align: left;
+  padding-top: 80px;
+  margin-bottom: 600px; /* adjust space between title and gallery */
 }
 
 .gallery {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 40px;
-  width: 70vw;
+  gap: 60px;
+  width: 65vw;
 }
 
 .gallery .img-wrapper:nth-child(1),
