@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+.container {
+    display: flex;
+    background-color: #f5f5f5;
+    height: 100vh; /* Makes sure the container fills the entire viewport height */
+    padding: 30px;
+}
+
+.img-container, .desc-container {
+    flex: 3; /* Ensures equal width for both sides */
+    overflow: hidden; /* In case content exceeds container size */
+}
+
+.img-container img {
+    width: 80%; /* Makes sure the image fills its container's width */
+    height: 50%;
+    object-fit: cover; /* Ensures the aspect ratio of the image is maintained */
+}
+
+.desc-container {
+    flex: 2;
+    padding: 20px; /* Add some spacing for the description content */
+
+}

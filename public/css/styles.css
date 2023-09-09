@@ -59,12 +59,24 @@ body {
 
 .title {
   font-size: 30px;   /* adjust as needed */
+  padding-left: 50px;
   font-weight: bold;
   text-align: left;
   padding-top: 80px;
-  margin-bottom: 600px; /* adjust space between title and gallery */
+  margin-bottom: 300px; /* adjust space between title and gallery */
 }
 
+.lines {
+  font-size: 30px;   /* adjust as needed */
+  font-weight: 10px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-right: 50px;
+  text-align: right;
+  padding-top: 80px;
+  margin-bottom: 200px; /* adjust space between title and gallery */
+  font-family: 'League Script', cursive;
+
+}
 .gallery {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
