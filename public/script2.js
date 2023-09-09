@@ -1,22 +1,25 @@
-let images = ["path_to_image_1.jpg", "path_to_image_2.jpg", ...]; // Add paths to all your images here
+
 let currentImageIndex = 0;
 
-document.querySelector('.next').addEventListener('click', function() {
-    currentImageIndex++;
-    if (currentImageIndex >= images.length) {
-        currentImageIndex = 0;  // loop back to the start
-    }
+const images = [
+    './images/film1.png', 
+    './images/film2.png', 
+    './images/film3.png', 
+    './images/film4.png'
+];
+
+const imgElement = document.getElementById('currentImage');
+
+document.getElementById('nextBtn').addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
     updateImage();
 });
 
-document.querySelector('.prev').addEventListener('click', function() {
-    currentImageIndex--;
-    if (currentImageIndex < 0) {
-        currentImageIndex = images.length - 1;  // loop back to the end
-    }
+document.getElementById('prevBtn').addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
     updateImage();
 });
 
 function updateImage() {
-    document.getElementById('currentImage').src = images[currentImageIndex];
+    imgElement.src = images[currentImageIndex];
 }
