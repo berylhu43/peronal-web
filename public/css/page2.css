@@ -67,3 +67,13 @@ button {
     right: 0; 
     transform: translateY(-50%);  /* Adjusting the button's position */
 }
+
+#prevBtn2 {
+    left: 0; 
+    transform: translateY(-50%);  /* Adjusting the button's position */
+}
+
+#nextBtn2 {
+    right: 0; 
+    transform: translateY(-50%);  /* Adjusting the button's position */
+}
